@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<title>Sött och Elegant</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
-<title>Sött och Elegant</title>
+<!--for social media icon-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
     <div class="wrapper">
@@ -16,23 +18,81 @@
                     </a>
                 </div>
                 <!--Navigation-->
-                <nav>
+                <nav class="navbar">
                     <ul>
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">PRODUCTS</a></li>
-                        <li><a href="#">SERVICES</a></li>
+                        <li class="subNav"><a href="#">PRODUCTS</a>
+                            <ul>
+                                <li><a href="#">Bakeries</a></li>
+                                <li><a href="#">Sanwiches</a></li>
+                                <li><a href="#">Cakes</a></li>
+                                <li><a href="#">Cookies & Snack</a></li>
+                            </ul>
+                        </li>
+                        <li class="subNav"><a href="#">SERVICES</a>
+                            <ul>
+                                <li><a href="#">Wedding</a></li>
+                                <li><a href="#">Catering</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">LOCATION</a></li>
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                 </nav>
             </div>
-
         </header>
-
+        <!--start content-->
+        <main class="mainContent">
+            <!--Head img-->
+            <div class="imageHeadContent">
+                <img class="cafeHeadContent" src="pics/firstpage/cafeHeadContent_fixed.jpg" alt="sött och elegant, cafe">
+            </div>
+            <section id="firstContent">
+                <h2>Sött och Elegant</h2>
+                <p>Baked fresh everyday</p>
+            </section>
+            <section id="secondContent">
+                <img src="pics/firstpage/cafe3_fixed.jpg" alt="cafe picture">
+                <img src="pics/firstpage/cafe1_fixed.jpg" alt="cafe picture">
+                <img src="pics/firstpage/cafe2_fixed.jpg" alt="cafe picture">
+                <img src="pics/firstpage/coffee-on-table_fixed.jpg" alt="cafe picture">
+                <img src="pics/firstpage/cafe4_fixed.jpg" alt="cafe picture">
+                <img src="pics/firstpage/waffel_fixed.jpg" alt="cafe picture">
+                <h2>OPENING HOURS</h2>
+                <p>
+                    Monday-Friday<br> 08.00-18.00
+                </p>
+                <p>
+                    Saturday-Sunday<br> 10.00-20.00
+                </p>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            <div class="footerCenter">
+                <div class="footerContent">
+                    <p id="ft"><strong>LOCATION</strong></p>
+                    <em>Drottningatan 20,<br>
+                        Stockholm, Sweden
+                    </em>
+                </div>
+                <div class="footerContent">
+                    <p id="ft"><strong>CONTACT</strong></p>
+                    <p>+4873 123 4567</p>
+                </div>
+                <div class="footerContent">
+                    <p id="ft"><strong>EMAIL</strong></p>
+                    <a href="mailto:exampel@gmail.com">exampel@gmail.com</a>
+                </div>
+            </div>
+            <div class="footerSocial">
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://www.instragram.com" class="fa fa-instagram"></a>
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+            </div>
+        </footer>
     </div>
-
-
 </body>
 
 </html>
