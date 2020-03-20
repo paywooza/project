@@ -19,17 +19,7 @@ body {
 
 header {
     background-color: #807064;
-    /* height: 60px; */
     position: relative;
-    /* padding-top: 5px; */
-    /* padding-left: 30px;
-    padding-right: 30px; */
-}
-
-.logoWebsite {
-    float: left;
-    max-width: 100%;
-    height: auto !important;
 }
 
 .toggle,
@@ -43,10 +33,11 @@ header {
 .navbar {
     padding: 0;
     margin: 0;
-    background-color: #807064
+    background-color: #807064;
 }
 
 #logo {
+    color: #fae9dc;
     display: block;
     padding: 0 30px;
     float: left;
@@ -94,7 +85,7 @@ nav a {
     display: block;
     padding: 14px 20px;
     color: #fae9dc;
-    font-size: 17px;
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -161,29 +152,6 @@ li>a:only-child:after {
     color: white;
     z-index: -1;
 }
-
-
-/* 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-
-/* .imgMainContent {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    text-align: center;
-    color: white;
-} */
-
-
-/* .cafeHeadContent {
-    width: 100%;
-} */
 
 .imgText {
     font-size: 30px;
@@ -321,7 +289,14 @@ a {
     color: white;
 }
 
-@media screen and (max-width:420px) {
+
+/* Media Queries
+--------------------------------------------- */
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media screen and (max-width:600px) {
     .body {
         margin: 0px;
         width: 100%;
@@ -332,17 +307,45 @@ a {
     header {
         padding: 2px;
     }
+    .cafeHeadImg {
+        width: 100%;
+        height: 710px;
+        object-fit: cover;
+    }
     .imgText {
-        font-size: 10px;
+        width: 100%;
+        font-size: 16px;
     }
     .contentWrapper {
         padding: 0px 2px 3px 2px;
+    }
+    #firstContent {
+        padding: 90px 20px;
+        font-size: 24px;
+    }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    footer {
+        padding: 2px;
+    }
+    #footerText {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .footerContent {
+        width: 100%;
     }
 }
 
 
 /* Media Queries
 --------------------------------------------- */
+
+
+/* MENU BAR */
 
 @media screen and (max-width:768px) {
     #logo {
@@ -367,7 +370,7 @@ a {
         background-color: #807064;
         padding: 14px 20px;
         color: #fae9dc;
-        font-size: 17px;
+        font-size: 15px;
         text-decoration: none;
         border: none;
     }
@@ -399,7 +402,7 @@ a {
     nav ul ul ul a {
         padding: 14px 20px;
         color: #FFF;
-        font-size: 17px;
+        font-size: 15px;
     }
     nav ul li ul li .toggle,
     nav ul ul a {
@@ -425,6 +428,7 @@ a {
     }
     nav ul ul ul li {
         position: static;
+        width: 30px;
         /* has to be the same number as the "width" of "nav ul ul li" */
     }
 }
