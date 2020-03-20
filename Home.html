@@ -19,8 +19,7 @@
 
             <!--Navigation-->
             <nav class="navbar">
-
-                <!--MENU ITEMS-->
+                <!-- MENU ITEMS-->
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT US</a></li>
@@ -30,10 +29,6 @@
                             <li><a href="#">Sanwiches</a></li>
                             <li><a href="#">Cakes</a></li>
                             <li><a href="#">Cookies & Snack</a></li>
-                            <li>
-                                <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-                            </li>
-                            <i class="fa fa-bars"></i>
                         </ul>
                     </li>
                     <li class="subNav"><a href="#">SERVICES</a>
@@ -44,50 +39,29 @@
                     </li>
                     <li><a href="#">LOCATION</a></li>
                     <li><a href="#">CONTACT US</a></li>
-                </ul>
-            </nav>
 
-            <!--Nav MOBILE-->
-            <nav class="navbar-mobile">
-
-                <!--MENU ITEMS-->
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li class="subNav"><a href="#">PRODUCTS</a>
-                        <ul>
-                            <li><a href="#">Bakeries</a></li>
-                            <li><a href="#">Sanwiches</a></li>
-                            <li><a href="#">Cakes</a></li>
-                            <li><a href="#">Cookies & Snack</a></li>
-                            <li>
-                                <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-                            </li>
-                            <i class="fa fa-bars"></i>
-                        </ul>
-                    </li>
-                    <li class="subNav"><a href="#">SERVICES</a>
-                        <ul>
-                            <li><a href="#">Wedding</a></li>
-                            <li><a href="#">Catering</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">LOCATION</a></li>
-                    <li><a href="#">CONTACT US</a></li>
                 </ul>
             </nav>
         </header>
 
+
         <!--start Main content-->
         <main class="mainContent">
-            <!--Head img-->
-            <div class="imgMainContent">
-                <img class="cafeHeadContent" src="pics/firstpage/cafeHeadContent_fixed.jpg" alt="sött och elegant, cafe">
+            <div class="container">
+                <img class="cafeHeadContent" src="pics/firstpage/cafeHeadContent_fixed.jpg" alt="sött och elegant, cafe" style="width:100%;">
                 <div class="imgText">
                     <h2>CAFE · EVENTS · BAKERY</h2>
                     <p>Stockholm, Sweden</p>
                 </div>
             </div>
+            <!--Head img-->
+            <!-- <div class="imgMainContent">
+                <img class="cafeHeadContent" src="pics/firstpage/cafeHeadContent_fixed.jpg" alt="sött och elegant, cafe">
+                <div class="imgText">
+                    <h2>CAFE · EVENTS · BAKERY</h2>
+                    <p>Stockholm, Sweden</p>
+                </div>
+            </div> -->
             <!--content-->
             <div class="contentWrapper">
                 <section id="firstContent">
@@ -155,5 +129,15 @@
         </footer>
     </div>
 </body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 
 </html>

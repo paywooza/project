@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: #807064;
-    max-height: 100px;
+    height: 100px;
     position: relative;
     padding-top: 5px;
     padding-left: 30px;
@@ -37,9 +37,10 @@ header {
     margin-top: 50px;
 }
 
-.navbar-mobile {
+
+/* .navbar-mobile {
     display: none;
-}
+} */
 
 nav ul {
     /* justify-content: flex-end; */
@@ -63,6 +64,10 @@ nav li a {
 
 nav li a:hover {
     background-color: #3D3630;
+}
+
+.navbar .icon {
+    display: none;
 }
 
 .subNav ul {
@@ -92,17 +97,35 @@ nav li a:hover {
     padding: 0px 55px 70px 55px;
 }
 
-.imgMainContent {
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: -1;
+}
+
+
+/* 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+
+/* .imgMainContent {
     max-width: 100%;
     height: auto;
     position: relative;
     text-align: center;
     color: white;
-}
+} */
 
-.cafeHeadContent {
+
+/* .cafeHeadContent {
     width: 100%;
-}
+} */
 
 .imgText {
     font-size: 30px;
@@ -259,12 +282,4 @@ a {
     }
 }
 
-@media screen and (max-width:1040px) {
-    /* desktop navbar */
-    .navbar {
-        display: none;
-    }
-    .navbar-mobile {
-        display: block;
-    }
-}
+@media screen and (max-width:1040px) {}
