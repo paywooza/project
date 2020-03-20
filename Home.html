@@ -13,17 +13,26 @@
         <!--Header-->
         <header class="topHeader">
             <!--Logo-->
-            <a class="logoBotton" href="Home.html">
+            <!-- <a href="Home.html">
                 <img class="logoWebsite" src="Logo/logo_transparent_fixed2.png" alt="Sött och Elegant">
-            </a>
+            </a> -->
 
             <!--Navigation-->
             <nav class="navbar">
+                <div id="logo">Your Logo here</div>
+
                 <!-- MENU ITEMS-->
-                <ul>
+                <label for="drop" class="toggle">MENU</label>
+                <input type="checkbox" id="drop">
+
+                <ul class="menu">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT US</a></li>
-                    <li class="subNav"><a href="#">PRODUCTS</a>
+                    <li>
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-1" class="toggle">PRODUCTS +</label>
+                        <a href="#">PRODUCTS</a>
+                        <input type="checkbox" id="drop-1">
                         <ul>
                             <li><a href="#">Bakeries</a></li>
                             <li><a href="#">Sanwiches</a></li>
@@ -31,15 +40,32 @@
                             <li><a href="#">Cookies & Snack</a></li>
                         </ul>
                     </li>
-                    <li class="subNav"><a href="#">SERVICES</a>
+                    <li>
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-2" class="toggle">SERVICES +</label>
+                        <a href="#">SERVICES</a>
+                        <input type="checkbox" id="drop-2">
                         <ul>
                             <li><a href="#">Wedding</a></li>
                             <li><a href="#">Catering</a></li>
                         </ul>
                     </li>
+                    <!-- <li class="subNav"><a href="#">PRODUCTS</a>
+                        <ul>
+                            <li><a href="#">Bakeries</a></li>
+                            <li><a href="#">Sanwiches</a></li>
+                            <li><a href="#">Cakes</a></li>
+                            <li><a href="#">Cookies & Snack</a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="subNav"><a href="#">SERVICES</a>
+                        <ul>
+                            <li><a href="#">Wedding</a></li>
+                            <li><a href="#">Catering</a></li>
+                        </ul>
+                    </li> -->
                     <li><a href="#">LOCATION</a></li>
                     <li><a href="#">CONTACT US</a></li>
-
                 </ul>
             </nav>
         </header>
