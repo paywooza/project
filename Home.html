@@ -4,93 +4,154 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <!--for social media icon-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
 
 <body>
     <div class="wrapper">
         <!--Header-->
         <header class="topHeader">
-            <div class="headContainer">
-                <!--Logo-->
-                <div class="topLogo">
-                    <a class="logoBotton" href="#">
-                        <img class="logoWebsite" src="Logo/logo_transparent_fixed2.png" alt="Sött och Elegant">
-                    </a>
-                </div>
-                <!--Navigation-->
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li class="subNav"><a href="#">PRODUCTS</a>
-                            <ul>
-                                <li><a href="#">Bakeries</a></li>
-                                <li><a href="#">Sanwiches</a></li>
-                                <li><a href="#">Cakes</a></li>
-                                <li><a href="#">Cookies & Snack</a></li>
-                            </ul>
-                        </li>
-                        <li class="subNav"><a href="#">SERVICES</a>
-                            <ul>
-                                <li><a href="#">Wedding</a></li>
-                                <li><a href="#">Catering</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">LOCATION</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <!--Logo-->
+            <a class="logoBotton" href="Home.html">
+                <img class="logoWebsite" src="Logo/logo_transparent_fixed2.png" alt="Sött och Elegant">
+            </a>
+
+            <!--Navigation-->
+            <nav class="navbar">
+
+                <!--MENU ITEMS-->
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li class="subNav"><a href="#">PRODUCTS</a>
+                        <ul>
+                            <li><a href="#">Bakeries</a></li>
+                            <li><a href="#">Sanwiches</a></li>
+                            <li><a href="#">Cakes</a></li>
+                            <li><a href="#">Cookies & Snack</a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+                            </li>
+                            <i class="fa fa-bars"></i>
+                        </ul>
+                    </li>
+                    <li class="subNav"><a href="#">SERVICES</a>
+                        <ul>
+                            <li><a href="#">Wedding</a></li>
+                            <li><a href="#">Catering</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">LOCATION</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+
+            <!--Nav MOBILE-->
+            <nav class="navbar-mobile">
+
+                <!--MENU ITEMS-->
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li class="subNav"><a href="#">PRODUCTS</a>
+                        <ul>
+                            <li><a href="#">Bakeries</a></li>
+                            <li><a href="#">Sanwiches</a></li>
+                            <li><a href="#">Cakes</a></li>
+                            <li><a href="#">Cookies & Snack</a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+                            </li>
+                            <i class="fa fa-bars"></i>
+                        </ul>
+                    </li>
+                    <li class="subNav"><a href="#">SERVICES</a>
+                        <ul>
+                            <li><a href="#">Wedding</a></li>
+                            <li><a href="#">Catering</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">LOCATION</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
         </header>
-        <!--start content-->
+
+        <!--start Main content-->
         <main class="mainContent">
             <!--Head img-->
-            <div class="imageHeadContent">
+            <div class="imgMainContent">
                 <img class="cafeHeadContent" src="pics/firstpage/cafeHeadContent_fixed.jpg" alt="sött och elegant, cafe">
+                <div class="imgText">
+                    <h2>CAFE · EVENTS · BAKERY</h2>
+                    <p>Stockholm, Sweden</p>
+                </div>
             </div>
-            <section id="firstContent">
-                <h2>Sött och Elegant</h2>
-                <p>Baked fresh everyday</p>
-            </section>
-            <section id="secondContent">
-                <img src="pics/firstpage/cafe3_fixed.jpg" alt="cafe picture">
-                <img src="pics/firstpage/cafe1_fixed.jpg" alt="cafe picture">
-                <img src="pics/firstpage/cafe2_fixed.jpg" alt="cafe picture">
-                <img src="pics/firstpage/coffee-on-table_fixed.jpg" alt="cafe picture">
-                <img src="pics/firstpage/cafe4_fixed.jpg" alt="cafe picture">
-                <img src="pics/firstpage/waffel_fixed.jpg" alt="cafe picture">
-                <h2>OPENING HOURS</h2>
-                <p>
-                    Monday-Friday<br> 08.00-18.00
-                </p>
-                <p>
-                    Saturday-Sunday<br> 10.00-20.00
-                </p>
-            </section>
+            <!--content-->
+            <div class="contentWrapper">
+                <section id="firstContent">
+                    <h2>Sött och Elegant</h2>
+                    <span class="border"></span>
+                    <p>Baked fresh everyday</p>
+                </section>
+                <section id="secondContent">
+                    <div class="row">
+                        <div class="column">
+                            <img src="pics/firstpage/cafe3_fixed.jpg" alt="cafe picture">
+                            <img src="pics/firstpage/coffee-on-table_fixed.jpg" alt="cafe picture">
+                        </div>
+                        <div class="column">
+                            <img src="pics/firstpage/cafe1_fixed.jpg" alt="cafe picture">
+                            <img src="pics/firstpage/waffel_fixed.jpg" alt="cafe picture">
+                            <img src="pics/firstpage/opening-hours.jpg" alt="cafe picture">
+
+                            <!-- <div class="openingTime">
+                                <div class="center">
+                                    <h2>OPENING HOURS</h2>
+                                    <p>
+                                        Monday-Friday<br> 08.00-18.00
+                                    </p>
+                                    <p>
+                                        Saturday-Sunday<br> 10.00-20.00
+                                    </p>
+                                </div>
+
+                            </div> -->
+                        </div>
+                        <div class="column">
+                            <img src="pics/firstpage/cafe2_fixed.jpg" alt="cafe picture">
+                            <img src="pics/firstpage/cafe4_fixed.jpg" alt="cafe picture">
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
+
         <!--Footer-->
         <footer>
-            <div class="footerCenter">
+            <section id="footerText">
                 <div class="footerContent">
-                    <p id="ft"><strong>LOCATION</strong></p>
+                    <h4><strong>LOCATION</strong></h4>
                     <em>Drottningatan 20,<br>
                         Stockholm, Sweden
                     </em>
                 </div>
                 <div class="footerContent">
-                    <p id="ft"><strong>CONTACT</strong></p>
+                    <h4><strong>CONTACT</strong></h4>
                     <p>+4873 123 4567</p>
                 </div>
                 <div class="footerContent">
-                    <p id="ft"><strong>EMAIL</strong></p>
+                    <h4><strong>EMAIL</strong></h4>
                     <a href="mailto:exampel@gmail.com">exampel@gmail.com</a>
                 </div>
-            </div>
-            <div class="footerSocial">
+            </section>
+            <section id="socialmedia">
                 <a href="https://www.facebook.com" class="fa fa-facebook"></a>
                 <a href="https://www.instragram.com" class="fa fa-instagram"></a>
                 <a href="https://www.twitter.com" class="fa fa-twitter"></a>
-            </div>
+            </section>
+
         </footer>
     </div>
 </body>
