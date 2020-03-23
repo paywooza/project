@@ -72,7 +72,7 @@ nav ul {
 
 nav ul li {
     margin: 0;
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
     background-color: #807064;
 }
@@ -142,10 +142,6 @@ li>a:only-child:after {
     content: '';
 }
 
-.contentWrapper {
-    padding: 0px 55px 70px 55px;
-}
-
 .container {
     position: relative;
     text-align: center;
@@ -160,6 +156,10 @@ li>a:only-child:after {
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 2.5em;
+}
+
+.contentWrapper {
+    padding: 0px 55px 70px 55px;
 }
 
 #firstContent {
@@ -287,6 +287,17 @@ a {
 .fa-twitter {
     background: #55ACEE;
     color: white;
+}
+
+
+/*
+AboutUs
+*/
+
+.aboutUs .cafeHeadImg {
+    width: 100%;
+    height: 504px;
+    object-fit: cover;
 }
 
 
