@@ -291,13 +291,24 @@ a {
 
 
 /*
-AboutUs
+***************** About Us *********************
 */
 
 .aboutUs .cafeHeadImg {
     width: 100%;
     height: 504px;
     object-fit: cover;
+}
+
+.aboutUs .contentWrapper #firstContent p {
+    font-size: 17px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.fixpics {
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
 
@@ -348,6 +359,11 @@ AboutUs
     }
     .footerContent {
         width: 100%;
+    }
+    .aboutUs .cafeHeadImg {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
     }
 }
 
@@ -441,6 +457,11 @@ AboutUs
         position: static;
         width: 30px;
         /* has to be the same number as the "width" of "nav ul ul li" */
+    }
+    /*** Fixed pics in the content ***/
+    .fixpics {
+        padding-left: 2px;
+        padding-right: 2px;
     }
 }
 
