@@ -313,9 +313,13 @@ a {
 ***************** About Us *********************
 */
 
+
+/* Fix picture hereeeeee */
+
 .aboutUs .cafeHeadImg,
 .location .cafeHeadImg,
-.contact .cafeHeadImg {
+.contact .cafeHeadImg,
+.bakeries .cafeHeadImg {
     width: 100%;
     height: 504px;
     object-fit: cover;
@@ -421,6 +425,23 @@ textarea {
 }
 
 
+/*
+***************** Bakeries *********************
+*/
+
+.bakeries #secondContent img {
+    width: 448px;
+}
+
+.bakeries #secondContent {
+    flex-direction: column;
+}
+
+.bakeries #secondContent .bakeRow {
+    display: flex;
+}
+
+
 /* Media Queries
 --------------------------------------------- */
 
@@ -471,7 +492,8 @@ textarea {
     }
     .aboutUs .cafeHeadImg,
     .location .cafeHeadImg,
-    .contact .cafeHeadImg {
+    .contact .cafeHeadImg,
+    .bakeries .cafeHeadImg {
         width: 100%;
         height: 200px;
         object-fit: cover;
