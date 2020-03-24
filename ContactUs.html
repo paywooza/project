@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>Sött och Elegant</title>
+<html>
+<title>Contact us</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <!--for social media icon-->
@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="stylesheet.css" type="text/css">
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper contact">
         <!--Header-->
         <header class="topHeader">
 
@@ -56,40 +56,58 @@
         <!--start Main content-->
         <main class="mainContent">
             <div class="container">
-                <img class="cafeHeadImg" src="pics/firstpage/cafeHeadContent_fixed.jpg" alt="sött och elegant, cafe" style="width:100%;">
+                <img class="cafeHeadImg" src="pics/ContactUs/contact_fixed.jpg" alt="sött och elegant, cafe">
                 <div class="imgText">
-                    <h2>CAFE · EVENTS · BAKERY</h2>
-                    <p>Stockholm, Sweden</p>
+                    <h2>CONTACT US</h2>
                 </div>
             </div>
 
-            <!--content-->
+            <!--content MAP-->
             <div class="contentWrapper">
                 <section id="firstContent">
-                    <h2>Sött och Elegant</h2>
+                    <h2>Contact</h2>
                     <span class="border"></span>
-                    <p>Baked fresh everyday</p>
+
+                    <h4><strong>TEL:</strong></h4>
+                    <p>+4873 123 4567</p>
+                    <h4><strong>EMAIL:</strong></h4>
+                    <a href="mailto:exampel@gmail.com">exampel@gmail.com</a>
+
                 </section>
-                <!--Image content-->
-                <section id="secondContent">
-                    <div class="row">
-                        <div class="column">
-                            <img src="pics/firstpage/cafe3_fixed.jpg" alt="cafe picture">
-                            <img src="pics/firstpage/coffee-on-table_fixed.jpg" alt="cafe picture">
-                        </div>
-                        <div class="column">
-                            <img src="pics/firstpage/cafe1_fixed.jpg" alt="cafe picture">
-                            <img src="pics/firstpage/waffel_fixed.jpg" alt="cafe picture">
-                            <img src="pics/firstpage/opening-hours.jpg" alt="cafe picture">
-                        </div>
-                        <div class="column">
-                            <img src="pics/firstpage/cafe2_fixed.jpg" alt="cafe picture">
-                            <img src="pics/firstpage/cafe4_fixed.jpg" alt="cafe picture">
-                        </div>
+
+                <section id="secondContent" class="center">
+                    <div class="formWrapper">
+                        <h2>HAVE ANOTHER QUERY?</h2>
+                        <fieldset id="form">
+                            <div class="formClass">
+                                <label>
+                                Name:<br>
+                                <input type="text" name="name" placeholder="Your First Name"><br>
+                            </label>
+                                <label>
+                                Lastname:<br>
+                                <input type="text" name="lastname"  placeholder="Your Last Name"><br>
+                            </label>
+                                <label>
+                                Email:<br>
+                                <input type="text" name="email"  placeholder="Your Email"><br>
+                            </label>
+                                <label for="meddelande">
+                                Message:<br>
+                                <textarea rows="8" cols="40" id="meddelande" placeholder="Your Message"></textarea><br>
+                            </label>
+                                <input type="submit" value="Submit" id="bottom">
+                            </div>
+                        </fieldset>
                     </div>
+
+
                 </section>
+
             </div>
+
         </main>
+
 
         <!--Footer-->
         <footer>
@@ -114,7 +132,6 @@
                 <a href="https://www.instragram.com" class="fa fa-instagram"></a>
                 <a href="https://www.twitter.com" class="fa fa-twitter"></a>
             </section>
-
         </footer>
     </div>
 </body>

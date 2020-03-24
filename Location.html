@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>Sött och Elegant</title>
+<html>
+<title>Location</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <!--for social media icon-->
@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="stylesheet.css" type="text/css">
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper location">
         <!--Header-->
         <header class="topHeader">
 
@@ -56,40 +56,57 @@
         <!--start Main content-->
         <main class="mainContent">
             <div class="container">
-                <img class="cafeHeadImg" src="pics/firstpage/cafeHeadContent_fixed.jpg" alt="sött och elegant, cafe" style="width:100%;">
+                <img class="cafeHeadImg" src="pics/Location/location_fixed.jpg" alt="sött och elegant, cafe">
                 <div class="imgText">
-                    <h2>CAFE · EVENTS · BAKERY</h2>
-                    <p>Stockholm, Sweden</p>
+                    <h2>LOCATION</h2>
                 </div>
             </div>
 
-            <!--content-->
+            <!--content MAP-->
             <div class="contentWrapper">
                 <section id="firstContent">
-                    <h2>Sött och Elegant</h2>
+                    <h2>Find us</h2>
                     <span class="border"></span>
-                    <p>Baked fresh everyday</p>
+                    <address>Drottningatan 20,<br>
+                        Stockholm, Sweden</address>
                 </section>
-                <!--Image content-->
+
                 <section id="secondContent">
-                    <div class="row">
-                        <div class="column">
-                            <img src="pics/firstpage/cafe3_fixed.jpg" alt="cafe picture">
-                            <img src="pics/firstpage/coffee-on-table_fixed.jpg" alt="cafe picture">
-                        </div>
-                        <div class="column">
-                            <img src="pics/firstpage/cafe1_fixed.jpg" alt="cafe picture">
-                            <img src="pics/firstpage/waffel_fixed.jpg" alt="cafe picture">
-                            <img src="pics/firstpage/opening-hours.jpg" alt="cafe picture">
-                        </div>
-                        <div class="column">
-                            <img src="pics/firstpage/cafe2_fixed.jpg" alt="cafe picture">
-                            <img src="pics/firstpage/cafe4_fixed.jpg" alt="cafe picture">
-                        </div>
-                    </div>
+                    <a href="https://www.google.com/maps/place/Drottninggatan+20,+111+51+Stockholm,+Sweden/@59.3302632,18.062934,17z/data=!3m1!4b1!4m5!3m4!1s0x465f9d5ef954fba9:0x58f0ce8364dc291a!8m2!3d59.3302632!4d18.0651227">
+                        <img src="pics/Location/Map.PNG"></a>
+
                 </section>
+
+                <!-- <div id="map"></div>
+
+                <script>
+                    // Initialize and add the map
+                    function initMap() {
+                        // The location of Uluru
+                        var uluru = {
+                            lat: 59.3293,
+                            lng: 18.0686
+                        };
+                        // The map, centered at Uluru
+                        var map = new google.maps.Map(
+                            document.getElementById('map'), {
+                                zoom: 4,
+                                center: uluru
+                            });
+                        // The marker, positioned at Uluru
+                        var marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map
+                        });
+                    }
+                </script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe0sYr6LC9Gw5KPkjHgL9QeDvlb5viaaA&callback=initMap">
+                </script> -->
+
             </div>
+
         </main>
+
 
         <!--Footer-->
         <footer>
@@ -114,7 +131,6 @@
                 <a href="https://www.instragram.com" class="fa fa-instagram"></a>
                 <a href="https://www.twitter.com" class="fa fa-twitter"></a>
             </section>
-
         </footer>
     </div>
 </body>

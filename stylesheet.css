@@ -13,6 +13,16 @@ body {
     color: #3D3630;
 }
 
+
+/* For making form have the same font as body */
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+}
+
 .wrapper {
     width: 100%;
 }
@@ -290,11 +300,22 @@ a {
 }
 
 
+/* Center stuff */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /*
 ***************** About Us *********************
 */
 
-.aboutUs .cafeHeadImg {
+.aboutUs .cafeHeadImg,
+.location .cafeHeadImg,
+.contact .cafeHeadImg {
     width: 100%;
     height: 504px;
     object-fit: cover;
@@ -309,6 +330,94 @@ a {
 .fixpics {
     padding-left: 250px;
     padding-right: 250px;
+}
+
+
+/*
+***************** Location *********************
+*/
+
+.location #firstContent address {
+    font-size: 23px;
+    padding-top: 30px;
+}
+
+.location #secondContent {
+    text-align: center;
+}
+
+.location #secondContent img {
+    width: 50%;
+    height: auto;
+}
+
+
+/*
+***************** Contact us *********************
+*/
+
+.contact #firstContent h4 {
+    letter-spacing: 0.09em;
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+.contact #firstContent p,
+a {
+    color: #807064;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.contact #firstContent a:hover {
+    opacity: 0.5;
+}
+
+.contact .formWrapper {
+    width: 700px;
+}
+
+.contact .formWrapper h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact #form {
+    border: none;
+    border-top: 2px solid #807064 !important;
+    padding-top: 20px;
+}
+
+input[type=text],
+textarea {
+    padding: 12px 20px;
+    margin: 8px 0px;
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+.formClass {
+    width: 100%;
+}
+
+input[type=submit] {
+    float: right;
+    cursor: pointer;
+    background-color: #807064;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #000000;
+}
+
+fieldset,
+input,
+textarea {
+    border-radius: 4px;
+    border: 2px solid #ccc;
 }
 
 
@@ -360,10 +469,15 @@ a {
     .footerContent {
         width: 100%;
     }
-    .aboutUs .cafeHeadImg {
+    .aboutUs .cafeHeadImg,
+    .location .cafeHeadImg,
+    .contact .cafeHeadImg {
         width: 100%;
         height: 200px;
         object-fit: cover;
+    }
+    #secondContent {
+        padding: 0px 17px 17px 17px;
     }
 }
 
@@ -458,10 +572,15 @@ a {
         width: 30px;
         /* has to be the same number as the "width" of "nav ul ul li" */
     }
-    /*** Fixed pics in the content ***/
+    /*** Fix pics in the content ***/
     .fixpics {
         padding-left: 2px;
         padding-right: 2px;
+    }
+    /** Fix map **/
+    .location #secondContent img {
+        width: 100%;
+        height: auto;
     }
 }
 
