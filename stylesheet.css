@@ -429,16 +429,47 @@ textarea {
 ***************** Bakeries *********************
 */
 
-.bakeries #secondContent img {
+
+/* .bakeries #secondContent figure {
     width: 448px;
+} */
+
+.bakeries #secondContent img:hover {
+    opacity: 0.7;
 }
 
 .bakeries #secondContent {
     flex-direction: column;
 }
 
+
+/* Use flex-wrap to wrap the pictures so we can set in the responsive */
+
 .bakeries #secondContent .bakeRow {
     display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Set this to 25% .. so we get 4 pictures in the row*/
+
+.bakery {
+    width: 25%;
+}
+
+.bakeries #secondContent figcaption {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.bakeries #secondContent figcaption h6 {
+    font-weight: 100;
+    padding-top: 6px;
+}
+
+.bakeries #secondContent figcaption em {
+    font-size: 0.9em;
 }
 
 
@@ -501,10 +532,21 @@ textarea {
     #secondContent {
         padding: 0px 17px 17px 17px;
     }
+    /* .bakeries #secondContent .bakeRow {
+        display: block;
+        max-width: 100%;
+    } */
+    /* .bakeries #secondContent figure {
+        width: 100% !important;
+    } */
+    /* set to 100% and have to use !important otherwise its goonna show the ipad result*/
+    .bakery {
+        width: 100% !important;
+    }
 }
 
 
-/* Media Queries
+/* Media Queries IPAD
 --------------------------------------------- */
 
 
@@ -603,6 +645,10 @@ textarea {
     .location #secondContent img {
         width: 100%;
         height: auto;
+    }
+    /*Set pics to 50%... so we get 2 pics on the screen*/
+    .bakery {
+        width: 50%;
     }
 }
 
