@@ -448,6 +448,7 @@ textarea {
 .bakeries #secondContent .bakeRow {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
