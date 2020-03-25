@@ -332,8 +332,9 @@ a {
 }
 
 .fixpics {
-    padding-left: 250px;
-    padding-right: 250px;
+    margin: 0 auto;
+    /* Make pics center */
+    max-width: 1200px;
 }
 
 
