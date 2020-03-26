@@ -585,6 +585,9 @@ h5 {
     nav {
         margin: 0;
     }
+    nav ul {
+        width: 100%;
+    }
     /* Hide the navigation menu by default */
     /* Also hide the  */
     .toggle+a,
