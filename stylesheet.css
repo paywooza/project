@@ -28,7 +28,7 @@ button {
 }
 
 header {
-    background-color: #807064;
+    background-color: #72645A;
     position: relative;
 }
 
@@ -43,7 +43,7 @@ header {
 .navbar {
     padding: 0;
     margin: 0;
-    background-color: #807064;
+    /* background-color: #72645A; */
 }
 
 #logo {
@@ -84,7 +84,7 @@ nav ul li {
     margin: 0;
     /* display: inline-block; */
     float: left;
-    background-color: #807064;
+    background-color: #72645A;
 }
 
 
@@ -160,6 +160,7 @@ li>a:only-child:after {
 }
 
 .imgText {
+    width: 100%;
     font-size: 30px;
     position: absolute;
     top: 50%;
@@ -193,6 +194,7 @@ h2 {
 }
 
 #firstContent p {
+    /* font size for first page */
     font-size: smaller;
     padding-top: 9px;
 }
@@ -221,7 +223,7 @@ h2 {
 }
 
 footer {
-    background-color: #807064;
+    background-color: #72645A;
     min-height: 190px;
     width: 100%;
 }
@@ -513,7 +515,7 @@ h5 {
     }
     .cafeHeadImg {
         width: 100%;
-        height: 710px;
+        height: 710px !important;
         object-fit: cover;
     }
     .imgText {
@@ -548,7 +550,7 @@ h5 {
     .bakeries .cafeHeadImg,
     .wedding .cafeHeadImg {
         width: 100%;
-        height: 200px;
+        height: 200px !important;
         object-fit: cover;
     }
     #secondContent {
@@ -582,6 +584,9 @@ h5 {
         text-align: center;
         float: none;
     }
+    .wrapper .cafeHeadImg {
+        height: 470px;
+    }
     nav {
         margin: 0;
     }
@@ -597,7 +602,7 @@ h5 {
     /* Stylinf the toggle lable */
     .toggle {
         display: block;
-        background-color: #807064;
+        /* background-color: #807064; */
         padding: 14px 20px;
         color: #fae9dc;
         font-size: 15px;
