@@ -3,12 +3,13 @@
 <title>Products - Bakeries</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
-<!--for social media icon-->
+<!-- Link tag -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="stylesheet.css" type="text/css">
 
 <body>
+    <!-- Wrapper class, add "bakeries" class to specific div class and fix it in CSS -->
     <div class="wrapper bakeries">
         <!--Header-->
         <header class="topHeader">
@@ -53,8 +54,9 @@
         </header>
 
 
-        <!--start Main content-->
+        <!-- Start Main content -->
         <main class="mainContent">
+            <!-- container for wrap the head image and text -->
             <div class="container">
                 <img class="cafeHeadImg" src="pics/Products/products_fixed.jpg" alt="sött och elegant, cafe">
                 <div class="imgText">
@@ -70,10 +72,13 @@
                 </section>
 
                 <!-- Second Content -->
-
+                <!-- this section displays the products with picture and caption -->
                 <section id="secondContent" class="center">
+                    <!-- Create div "bakeRow" to wrap everything pictures and caption-->
                     <div class="bakeRow">
+                        <!-- Create div "bakery" to each picture and caption so i can fix the width of each -->
                         <div class="bakery">
+                            <!-- use "figure" tag and put the picture and figcaption to describe what the image is -->
                             <figure><img src="pics/Products/Bakeries/bakery_fixed.jpg" alt="bakery">
                                 <figcaption>Bakery<br>
                                     <h6><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -107,6 +112,7 @@
                         </div>
                     </div>
 
+                    <!-- create another class "bakeRow" because i want to display the products in 2 rows -->
                     <div class="bakeRow">
                         <div class="bakery">
                             <figure><img src="pics/Products/Bakeries/bakery5_fixed.jpg" alt="bakery">
@@ -146,8 +152,9 @@
         </main>
 
 
-        <!--Footer-->
+        <!-- Footer -->
         <footer>
+            <!-- footerText section, wrap all the text content -->
             <section id="footerText">
                 <div class="footerContent">
                     <h4><strong>LOCATION</strong></h4>
@@ -164,6 +171,7 @@
                     <a href="mailto:exampel@gmail.com">exampel@gmail.com</a>
                 </div>
             </section>
+            <!-- Social media section -->
             <section id="socialmedia">
                 <a href="https://www.facebook.com" class="fa fa-facebook"></a>
                 <a href="https://www.instragram.com" class="fa fa-instagram"></a>
