@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Sött och Elegant</title>
+<!-- Browser will follow the width of the device that user use -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
-<!--for social media icon-->
+<!-- for Open Sans font-->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<!-- for social media icon-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- for CSS -->
 <link rel="stylesheet" href="stylesheet.css" type="text/css">
 
 <body>
+    <!-- Wrapper class -->
     <div class="wrapper">
-        <!--Header-->
+        <!-- Header, wrap everything in the header -->
         <header class="topHeader">
-
-            <!--Navigation-->
+            <!-- Create Navigation bar -->
             <nav class="navbar">
+                <!-- Create Logo bar, but use only text here -->
                 <div id="logo">SÖTT OCH ELEGANT</div>
 
-                <!-- MENU ITEMS-->
+                <!-- Create MENU ITEMS -->
+
+                <!-- MENU, PRODUCTS +, SERVICES +, create it for use in the small device (not show in desktop) 
+                    put the label for "drop down menu"
+                    use class "toggle" for "drop down menu" -->
                 <label for="drop" class="toggle">MENU</label>
+                <!-- for drop down menu, "checkbox" will be checked when user click on the parent label (MENU, PRODUCTS +...) -->
+                <!-- because you can not hover on small devices so this will toggle the menu visible -->
                 <input type="checkbox" id="drop">
 
+                <!-- Use unodered list for menu -->
                 <ul class="menu">
                     <li><a href="Home.html">HOME</a></li>
                     <li><a href="AboutUs.html">ABOUT US</a></li>
                     <li>
                         <!-- First Tier Drop Down -->
+                        <!-- class "toggle" will show in the small devices -->
                         <label for="drop-1" class="toggle">PRODUCTS +</label>
                         <a href="#">PRODUCTS</a>
+                        <!-- "checkbox" will be checked when user click PRODUCTS + -->
                         <input type="checkbox" id="drop-1">
+                        <!-- Sub-menu -->
                         <ul>
                             <li><a href="Bakeries.html">Bakeries</a></li>
                             <li><a href="Sandwiches.html">Sandwiches</a></li>
@@ -53,25 +67,34 @@
         </header>
 
 
-        <!--start Main content-->
+        <!-- Start Main content -->
         <main class="mainContent">
+            <!-- container for wrap the head image -->
             <div class="container">
+                <!-- The head image -->
                 <img class="cafeHeadImg" src="pics/firstpage/cafeHeadContent_fixed.jpg" alt="sött och elegant, cafe" style="width: 100%;">
+                <!-- this div for put the text in the head image -->
                 <div class="imgText">
                     <h2>CAFE · EVENTS · BAKERY</h2>
                     <p>Stockholm, Sweden</p>
                 </div>
             </div>
 
-            <!--content-->
+            <!-- Content -->
+            <!-- for wrap all the content section -->
             <div class="contentWrapper">
+                <!-- First content section, use large text (h2) to attract attention -->
                 <section id="firstContent">
                     <h2>Sött och Elegant</h2>
+                    <!-- Create border with "span..class" because i want short border -->
                     <span class="border"></span>
                     <p>Baked fresh everyday</p>
                 </section>
+
                 <!--Image content-->
+                <!-- Second content for showing pictures in the cafe  -->
                 <section id="secondContent">
+                    <!-- Create div "row" and "column" for CSS -->
                     <div class="row">
                         <div class="column">
                             <img src="pics/firstpage/cafe3_fixed.jpg" alt="cafe picture">
@@ -91,9 +114,12 @@
             </div>
         </main>
 
-        <!--Footer-->
+        <!-- Footer -->
+        <!-- Create two section, one for location, contact and email, another for social media -->
         <footer>
+            <!-- footerText section, wrap all the text content -->
             <section id="footerText">
+                <!-- Create three div "footerContent" for each box, for CSS -->
                 <div class="footerContent">
                     <h4><strong>LOCATION</strong></h4>
                     <em>Drottningatan 20,<br>
@@ -109,6 +135,9 @@
                     <a href="mailto:exampel@gmail.com">exampel@gmail.com</a>
                 </div>
             </section>
+            <!-- Social media section -->
+            <!-- use "a" tag to link the social media symbol to the website
+                use class "fa fa..." for symbol in CSS file -->
             <section id="socialmedia">
                 <a href="https://www.facebook.com" class="fa fa-facebook"></a>
                 <a href="https://www.instragram.com" class="fa fa-instagram"></a>
