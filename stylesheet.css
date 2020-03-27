@@ -259,6 +259,7 @@ a {
 }
 
 .footerContent a {
+    font-size: 14px;
     text-decoration: none;
     color: white;
 }
@@ -365,7 +366,7 @@ a {
 ***************** Contact us *********************
 */
 
-.contact h4 {
+.contact #firstContent h4 {
     letter-spacing: 0.09em;
     padding-top: 40px;
     font-size: 25px;
