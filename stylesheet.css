@@ -1,8 +1,17 @@
+/* everyting in stylesheet use it */
+
+
+/* box-sizing, makes sure that total width and height of elements include padding and borders */
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
+
+
+/* In body, set background color,
+font-family (use Open sans), font-size ... */
 
 body {
     background-color: #fae9dc;
@@ -14,7 +23,7 @@ body {
 }
 
 
-/* For making form have the same font as body */
+/* For making that the form has the same font as body */
 
 input,
 select,
@@ -23,14 +32,28 @@ button {
     font-family: inherit;
 }
 
+
+/* set width in wrapper class to 100 percent (as wide as the parent container) */
+
 .wrapper {
     width: 100%;
 }
 
+
+/* style header with background color and use position relative so
+ */
+
 header {
     background-color: #72645A;
-    position: relative;
+    /* position: relative; */
 }
+
+
+/* For desktop, toggle class will not be displayed */
+
+
+/* "checkbox" in id="drop" will be used when user use small devices and 
+it will be checked when user click it (and then show the sub-nav) */
 
 .toggle,
 [id^=drop] {
@@ -38,13 +61,16 @@ header {
 }
 
 
-/* Giving a background-color to the nav container. */
+/* Set padding and margin to zero */
 
 .navbar {
     padding: 0;
     margin: 0;
-    /* background-color: #72645A; */
 }
+
+
+/* Style the logo with font color, display block (always start to the new line), 
+float to the left ... */
 
 #logo {
     color: #fae9dc;
@@ -57,7 +83,7 @@ header {
 
 
 /* Since we'll have the "ul li" "float:left"
- * we need to add a clear after the container. */
+  we need to add a clear after the container. */
 
 nav:after {
     content: "";
@@ -67,7 +93,7 @@ nav:after {
 
 
 /* Removing padding, margin and "list-style" from the "ul",
- * and adding "position:reltive" */
+  and adding "position:reltive" */
 
 nav ul {
     float: right;
@@ -78,11 +104,11 @@ nav ul {
 }
 
 
-/* Positioning the navigation items inline */
+/* Positioning the navigation items inline 
+by using "float:left" */
 
 nav ul li {
     margin: 0;
-    /* display: inline-block; */
     float: left;
     background-color: #72645A;
 }
@@ -99,10 +125,6 @@ nav a {
     text-decoration: none;
 }
 
-nav ul li ul li:hover {
-    background: #3D3630;
-}
-
 
 /* Background color change on Hover */
 
@@ -111,38 +133,36 @@ nav a:hover {
 }
 
 
-/* Hide Dropdowns by Default
+/* Hide Dropdowns by Default (use display:none)
  * and giving it a position of absolute */
 
 nav ul ul {
     display: none;
     position: absolute;
-    top: 60px;
+    /* top: 60px; */
 }
 
 
 /* Display Dropdowns on Hover */
 
 nav ul li:hover>ul {
-    /* display: block; */
     display: inherit;
-    /* position: relative; */
-    /* z-index: 1; */
 }
 
 
-/* Fisrt Tier Dropdown */
+/* Style Fisrt Tier Dropdown 
+ use "float: none; so its not going to float to the right of each other */
 
 nav ul ul li {
     width: 170px;
     float: none;
     display: list-item;
     position: relative;
-    top: -2px;
 }
 
 
-/* Change ' +' in order to change the Dropdown symbol */
+/* add '+' after link text to show it has children
+Use it in desktop!!!! */
 
 li>a:after {
     content: ' +';
@@ -152,12 +172,20 @@ li>a:only-child:after {
     content: '';
 }
 
+
+/* wrap the head image and text
+use position: relative; so the text can fit in the picture
+use z-index: -1; so the sub-menu can display */
+
 .container {
     position: relative;
     text-align: center;
     color: white;
     z-index: -1;
 }
+
+
+/* contain the text and center it in the picture */
 
 .imgText {
     width: 100%;
@@ -169,9 +197,15 @@ li>a:only-child:after {
     line-height: 2.5em;
 }
 
+
+/* wrap the first and second content */
+
 .contentWrapper {
     padding: 0px 55px 70px 55px;
 }
+
+
+/* Style the first content section */
 
 #firstContent {
     padding: 150px 55px;
@@ -180,10 +214,16 @@ li>a:only-child:after {
     line-height: 1.5;
 }
 
+
+/* Style h2 element */
+
 h2 {
     letter-spacing: 0.09em;
     font-weight: 200;
 }
+
+
+/* Style border , in this case i want it shorter than normal */
 
 .border {
     margin: auto;
@@ -193,19 +233,30 @@ h2 {
     background-color: #807064;
 }
 
+
+/* Style "p" in the first content */
+
 #firstContent p {
     /* font size for first page */
     font-size: smaller;
     padding-top: 9px;
 }
 
+
+/* Style Image Grid */
+
+
+/* Use flex-wrap to wrap all the pictures so it create a responsive image
+use display: flex; to display pictures next to each other*/
+
 .row {
-    position: relative;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
     display: flex;
     padding: 0 4px;
 }
+
+
+/* Style column class, use flex 25% to show in 3 column */
 
 .column {
     flex: 25%;
@@ -213,24 +264,34 @@ h2 {
     padding: 0 4px;
 }
 
+
+/* Create little space between each picture */
+
 .column img {
     margin-top: 8px;
     vertical-align: middle;
 }
 
+
+/* Set width 100 percent of the container */
+
 #secondContent img {
     width: 100%;
 }
 
+
+/* Style footer */
+
 footer {
     background-color: #72645A;
     min-height: 190px;
-    width: 100%;
+    padding: 20px;
+    /* width: 100%; */
 }
 
-footer {
-    padding: 20px;
-}
+
+/* Create first section in footer, and style it...
+use display flex so each div(text box) float to the left to each other */
 
 #footerText {
     display: flex;
@@ -241,16 +302,25 @@ footer {
     justify-content: center;
 }
 
+
+/* Style each footer content  */
+
 .footerContent {
     width: 20%;
     height: 100%;
     padding: 10px 10px;
 }
 
+
+/* Style "h4" text in .footerContent */
+
 .footerContent h4 {
     letter-spacing: 0.3em;
     padding-bottom: 13px;
 }
+
+
+/* Set font size in "p, em, a" text in .footerContent */
 
 .footerContent p,
 em,
@@ -258,20 +328,33 @@ a {
     font-size: 14px;
 }
 
+
+/* Style "a" tag in .footerContent 
+delete text docoration and set it in white instead*/
+
 .footerContent a {
     font-size: 14px;
     text-decoration: none;
     color: white;
 }
 
+
+/* Style hover in "a" tag */
+
 .footerContent a:hover {
     opacity: 0.7;
 }
+
+
+/* Set everyting to center in socialmedia section and set heigt to 50px */
 
 #socialmedia {
     text-align: center;
     height: 50px;
 }
+
+
+/* Style  social media symbol, create round border and align text to center... */
 
 .fa {
     padding: 10px;
@@ -283,19 +366,31 @@ a {
     border-radius: 50%;
 }
 
+
+/* Style hover in social media section */
+
 .fa:hover {
     opacity: 0.7;
 }
+
+
+/* Facebook symbol, set background color and icon to white */
 
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
 
+
+/* Instagram symbol, set background color and icon to white */
+
 .fa-instagram {
     background: #125688;
     color: white;
 }
+
+
+/* Twitter symbol, set background color and icon to white */
 
 .fa-twitter {
     background: #55ACEE;
@@ -303,7 +398,7 @@ a {
 }
 
 
-/* Center stuff */
+/* Center class, use for center stuff */
 
 .center {
     display: flex;
@@ -317,7 +412,8 @@ a {
 */
 
 
-/* Fix picture hereeeeee */
+/* Fix the head picture in every pages (except Home page)
+set height to 504px and object-fit to cover, so the picture can be flexible according to the size of browser*/
 
 .aboutUs .cafeHeadImg,
 .location .cafeHeadImg,
@@ -329,12 +425,19 @@ a {
     object-fit: cover;
 }
 
+
+/* Style "p" text in the first content section in Aboutus and Wedding class */
+
 .aboutUs #firstContent p,
 .wedding #firstContent p {
     font-size: 17px;
     padding-top: 50px;
     text-align: left;
 }
+
+
+/* class fixpics, fix the width of grid picture 
+and set in center */
 
 .fixpics {
     margin: 0 auto;
@@ -347,14 +450,23 @@ a {
 ***************** Location *********************
 */
 
+
+/* Style "address" tag in the first content section in location class */
+
 .location #firstContent address {
     font-size: 23px;
     padding-top: 30px;
 }
 
+
+/* Set the map in second content to center */
+
 .location #secondContent {
     text-align: center;
 }
+
+
+/* Set width to the map picture */
 
 .location #secondContent img {
     width: 50%;
@@ -366,11 +478,17 @@ a {
 ***************** Contact us *********************
 */
 
+
+/* Style "h4" tag in the first content section in contact class */
+
 .contact #firstContent h4 {
     letter-spacing: 0.09em;
     padding-top: 40px;
     font-size: 25px;
 }
+
+
+/* Style "p and a" tag in the first content section in contact class */
 
 .contact #firstContent p,
 a {
@@ -379,24 +497,40 @@ a {
     font-size: 17px;
 }
 
+
+/* Style hover in "a" tag in the first content section in contact class */
+
 .contact #firstContent a:hover {
     opacity: 0.5;
 }
 
+
+/* Set width to the form to 700px */
+
 .contact .formWrapper {
     width: 700px;
 }
+
+
+/* Style "h2" text in the form class */
 
 .contact .formWrapper h2 {
     text-align: center;
     padding-bottom: 10px;
 }
 
+
+/* Style the form, i only want to top border so i use border: none;
+and then style the border top */
+
 .contact #form {
     border: none;
-    border-top: 2px solid #807064 !important;
+    border-top: 2px solid #807064;
     padding-top: 20px;
 }
+
+
+/* Style the input text box */
 
 input[type=text],
 textarea {
@@ -406,9 +540,13 @@ textarea {
     width: 100%;
 }
 
-.formClass {
+
+/* .formClass {
     width: 100%;
-}
+} */
+
+
+/* Style the submit botton, set it float to the right */
 
 input[type=submit] {
     float: right;
@@ -419,9 +557,15 @@ input[type=submit] {
     padding: 12px 20px;
 }
 
+
+/* Style hover to the submit botton */
+
 input[type=submit]:hover {
     background-color: #000000;
 }
+
+
+/* Style the form border, set it little round */
 
 fieldset,
 input,
@@ -440,9 +584,15 @@ textarea {
     width: 448px;
 } */
 
+
+/* Style hover to the image in second content */
+
 .bakeries #secondContent img:hover {
     opacity: 0.7;
 }
+
+
+/* Use flex column to set div class bakeRow to display in 2 column*/
 
 .bakeries #secondContent {
     flex-direction: column;
@@ -464,16 +614,25 @@ textarea {
     width: 25%;
 }
 
+
+/* Style "figcaption" under the picture */
+
 .bakeries #secondContent figcaption {
     text-align: center;
     font-size: 20px;
     padding-bottom: 20px;
 }
 
+
+/* Style "h6" in figcaption under the picture */
+
 .bakeries #secondContent figcaption h6 {
     font-weight: 100;
     padding-top: 6px;
 }
+
+
+/* Style "em" in figcaption under the picture */
 
 .bakeries #secondContent figcaption em {
     font-size: 0.9em;
@@ -484,17 +643,14 @@ textarea {
 ***************** Wedding *********************
 */
 
+
+/* Style "h5" in wedding page */
+
 h5 {
     font-size: 25px;
     padding-top: 25px;
     font-weight: 100;
 }
-
-
-/* .wedding #firstContent p {
-    text-align: left;
-    font-size: 16px;
-} */
 
 
 /* Media Queries
@@ -504,47 +660,59 @@ h5 {
 /* Extra small devices (phones, 600px and down) */
 
 @media screen and (max-width:600px) {
-    .body {
+    /* .body {
         margin: 0px;
         width: 100%;
-    }
-    .wrapper {
+    } */
+    /* .wrapper {
         width: 100%;
-    }
+    } */
+    /* set padding smaller in heading */
     header {
         padding: 2px;
     }
+    /* Set heigt to the head picture to 710px and
+    put !important so it does not show height in IPAD media screen */
     .cafeHeadImg {
         width: 100%;
         height: 710px !important;
         object-fit: cover;
     }
+    /* Set width to 100 percent and font size to 16px */
     .imgText {
         width: 100%;
         font-size: 16px;
     }
+    /* Set smaller padding in contentWrapper class */
     .contentWrapper {
         padding: 0px 2px 3px 2px;
     }
+    /* Set smaller padding and font in first content section */
     #firstContent {
         padding: 90px 20px;
         font-size: 24px;
     }
+    /* Set flex to 100 percent so all pictures can show it full wide*/
     .column {
         flex: 100%;
         max-width: 100%;
     }
+    /* Set smaller padding in footer */
     footer {
         padding: 2px;
     }
+    /* Set display: block; to each id footer text, so it can display in block  */
     #footerText {
         display: block;
         width: 100%;
         height: auto;
     }
+    /* Set width to 100 percent */
     .footerContent {
         width: 100%;
     }
+    /* Fix the head picture in every pages (except Home page)
+set height to 200px and object-fit to cover, so the picture can be flexible according to the size of browser*/
     .aboutUs .cafeHeadImg,
     .location .cafeHeadImg,
     .contact .cafeHeadImg,
@@ -554,6 +722,7 @@ h5 {
         height: 200px !important;
         object-fit: cover;
     }
+    /* Set smaller padding in second content section */
     #secondContent {
         padding: 0px 17px 17px 17px;
     }
@@ -575,41 +744,46 @@ h5 {
 --------------------------------------------- */
 
 
+/* Large devices (IPAD and down) */
+
+
 /* MENU BAR */
 
 @media screen and (max-width:768px) {
+    /* Set logo to center */
     #logo {
-        display: block;
         padding: 0;
         width: 100%;
         text-align: center;
         float: none;
     }
+    /* Set height to 470px in cafeHeadImg class */
     .wrapper .cafeHeadImg {
         height: 470px;
     }
+    /* Set margin to 0*/
     nav {
         margin: 0;
     }
+    /* Set width to 100% in navigation*/
     nav ul {
         width: 100%;
     }
-    /* Hide the navigation menu by default */
-    /* Also hide the  */
+    /* Hide the navigation menu(desktop) by default */
     .toggle+a,
     .menu {
         display: none;
     }
-    /* Stylinf the toggle lable */
+    /* Styling the toggle lable */
     .toggle {
         display: block;
-        /* background-color: #807064; */
         padding: 14px 20px;
         color: #fae9dc;
         font-size: 15px;
         text-decoration: none;
         border: none;
     }
+    /* Styling hover in the toggle lable */
     .toggle :hover {
         background-color: #3D3630;
     }
@@ -622,17 +796,19 @@ h5 {
         display: block;
         width: 100%;
     }
-    nav ul ul .toggle,
+    /* nav ul ul .toggle,
     nav ul ul a {
         padding: 0 40px;
     }
     nav ul ul ul a {
         padding: 0 80px;
-    }
+    } */
+    /* Styling hover to the menu */
     nav a:hover,
     nav ul ul ul a {
         background-color: #000000;
     }
+    /* Styling font size, color and padding to the menu */
     nav ul li ul li .toggle,
     nav ul ul a,
     nav ul ul ul a {
@@ -640,6 +816,7 @@ h5 {
         color: #FFF;
         font-size: 15px;
     }
+    /* Set background color to sub-nav */
     nav ul li ul li .toggle,
     nav ul ul a {
         background-color: #212121;
@@ -649,8 +826,7 @@ h5 {
         float: none;
         position: static;
         color: #ffffff;
-        line-height: 30px;
-        /* has to be the same number as the "line-height" of "nav a" */
+        /* line-height: 30px; */
     }
     /* Hide menus on hover */
     nav ul ul li:hover>ul,
@@ -662,17 +838,11 @@ h5 {
         display: block;
         width: 100%;
     }
-    nav ul ul ul li {
-        position: static;
-        width: 30px;
-        /* has to be the same number as the "width" of "nav ul ul li" */
-    }
     /*** Fix pics in the content ***/
     .fixpics {
-        padding-left: 2px;
-        padding-right: 2px;
+        padding: 0px;
     }
-    /** Fix map **/
+    /** Fix maps width **/
     .location #secondContent img {
         width: 100%;
         height: auto;
@@ -683,9 +853,10 @@ h5 {
     }
 }
 
-@media all and (max-width: 330px) {
+
+/* @media all and (max-width: 330px) {
     nav ul li {
         display: block;
         width: 94%;
     }
-}
+} */
