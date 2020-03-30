@@ -161,18 +161,6 @@ nav ul ul li {
 }
 
 
-/* add '+' after link text to show it has children
-Use it in desktop!!!! */
-
-li>a:after {
-    content: ' +';
-}
-
-li>a:only-child:after {
-    content: '';
-}
-
-
 /* wrap the head image and text
 use position: relative; so the text can fit in the picture
 use z-index: -1; so the sub-menu can display */
