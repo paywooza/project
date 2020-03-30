@@ -82,8 +82,10 @@ float to the left ... */
 }
 
 
-/* Since we'll have the "ul li" "float:left"
-  we need to add a clear after the container. */
+/* after selector... to add something after the content of each selected element
+
+/* Since "ul li" "float:left"
+ need to add a clear after the container. */
 
 nav:after {
     content: "";
@@ -139,7 +141,6 @@ nav a:hover {
 nav ul ul {
     display: none;
     position: absolute;
-    /* top: 60px; */
 }
 
 
@@ -648,13 +649,6 @@ h5 {
 /* Extra small devices (phones, 600px and down) */
 
 @media screen and (max-width:600px) {
-    /* .body {
-        margin: 0px;
-        width: 100%;
-    } */
-    /* .wrapper {
-        width: 100%;
-    } */
     /* set padding smaller in heading */
     header {
         padding: 2px;
@@ -743,7 +737,6 @@ set height to 200px and object-fit to cover, so the picture can be flexible acco
         padding: 0;
         width: 100%;
         text-align: center;
-        float: none;
     }
     /* Set height to 470px in cafeHeadImg class */
     .wrapper .cafeHeadImg {
@@ -757,23 +750,19 @@ set height to 200px and object-fit to cover, so the picture can be flexible acco
     nav ul {
         width: 100%;
     }
-    /* Hide the navigation menu(desktop) by default */
+    /* Hide the navigation menu(desktop)
+    and hide the menu block */
     .toggle+a,
     .menu {
         display: none;
     }
-    /* Styling the toggle lable */
+    /* Styling and display the toggle lable */
     .toggle {
+        line-height: 30px;
         display: block;
         padding: 14px 20px;
         color: #fae9dc;
         font-size: 15px;
-        text-decoration: none;
-        border: none;
-    }
-    /* Styling hover in the toggle lable */
-    .toggle :hover {
-        background-color: #3D3630;
     }
     /* Display Dropdown when clicked on Parent Lable */
     [id^=drop]:checked+ul {
@@ -784,37 +773,16 @@ set height to 200px and object-fit to cover, so the picture can be flexible acco
         display: block;
         width: 100%;
     }
-    /* nav ul ul .toggle,
+    /* Set background and font color to sub-nav */
     nav ul ul a {
-        padding: 0 40px;
-    }
-    nav ul ul ul a {
-        padding: 0 80px;
-    } */
-    /* Styling hover to the menu */
-    nav a:hover,
-    nav ul ul ul a {
-        background-color: #000000;
-    }
-    /* Styling font size, color and padding to the menu */
-    nav ul li ul li .toggle,
-    nav ul ul a,
-    nav ul ul ul a {
-        padding: 14px 20px;
-        color: #FFF;
-        font-size: 15px;
-    }
-    /* Set background color to sub-nav */
-    nav ul li ul li .toggle,
-    nav ul ul a {
+        color: #ffffff;
         background-color: #212121;
     }
-    /* Hide Dropdowns by Default */
+    /* Use "position: static;" so the menu is always positioned according to the
+    normal flow of the page */
     nav ul ul {
         float: none;
         position: static;
-        color: #ffffff;
-        /* line-height: 30px; */
     }
     /* Hide menus on hover */
     nav ul ul li:hover>ul,
@@ -840,11 +808,3 @@ set height to 200px and object-fit to cover, so the picture can be flexible acco
         width: 50%;
     }
 }
-
-
-/* @media all and (max-width: 330px) {
-    nav ul li {
-        display: block;
-        width: 94%;
-    }
-} */
