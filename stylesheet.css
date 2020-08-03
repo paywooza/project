@@ -157,7 +157,7 @@ nav ul li:hover>ul {
 nav ul ul li {
     width: 170px;
     float: none;
-    display: list-item;
+    display: block;
     position: relative;
 }
 
@@ -708,13 +708,6 @@ set height to 200px and object-fit to cover, so the picture can be flexible acco
     #secondContent {
         padding: 0px 17px 17px 17px;
     }
-    /* .bakeries #secondContent .bakeRow {
-        display: block;
-        max-width: 100%;
-    } */
-    /* .bakeries #secondContent figure {
-        width: 100% !important;
-    } */
     /* set to 100% and have to use !important otherwise its goonna show the ipad result*/
     .bakery {
         width: 100% !important;
@@ -785,13 +778,12 @@ set height to 200px and object-fit to cover, so the picture can be flexible acco
         position: static;
     }
     /* Hide menus on hover */
-    nav ul ul li:hover>ul,
     nav ul li:hover>ul {
         display: none;
     }
-    /* Fisrt Tier Dropdown */
+    /* Fisrt Tier Dropdown 
+    Set width to 100 percent*/
     nav ul ul li {
-        display: block;
         width: 100%;
     }
     /*** Fix pics in the content ***/
